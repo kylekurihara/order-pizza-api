@@ -1,1 +1,1 @@
-web: gunicorn --workers=1 server:main
+web: python server.py
