@@ -1,6 +1,7 @@
 connexion
 Flask
 flask-marshmallow
+gunicorn
 marshmallow-sqlalchemy
 flask_jwt_extended
 Flask-SQLAlchemy
