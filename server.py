@@ -11,9 +11,9 @@ connex_app = config.connex_app
 # # Read the swagger.yml file to configure the endpoints
 connex_app.add_api("swagger.yml")
 
-def main():
+def main(arg1, arg2):
     port = int(os.environ.get('PORT', 5000))
     connex_app.run(host='0.0.0.0', port=port, debug=False)
 
 if __name__ == "__main__":
-    main()
+    main(None, None)
