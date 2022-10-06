@@ -12,7 +12,7 @@ connex_app = connexion.App(__name__, specification_dir='./templates')
 
 # Get the underlying Flask app instance
 app = connex_app.app
-CORS(app)
+# CORS(app)
 
 # Configure the SqlAlchemy part of the app instance
 app.config["SQLALCHEMY_ECHO"] = True
