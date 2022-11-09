@@ -1,5 +1,6 @@
 from datetime import datetime
 from config import db, ma
+from marshmallow_sqlalchemy import SQLAlchemyAutoSchema
 
 
 class Orders(db.Model):
@@ -15,8 +16,7 @@ class Orders(db.Model):
     )
 
 
-class OrderSchema(ma.SQLAlchemyAutoSchema):
+class OrderSchema(SQLAlchemyAutoSchema):
     class Meta:
         model = Orders
-        ordered = True
-sqla_session = db.session
+        load_instance = True
